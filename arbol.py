@@ -36,7 +36,7 @@ class Nodo:
     def igual(self, nodo):
         if self.get_datos() == nodo.get_datos():
             return True
-        else:  # No se mira en la foto, no se si me lo saque de la manga
+        else:
             return False
 
     def en_lista(self, lista_nodos):
