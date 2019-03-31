@@ -36,10 +36,12 @@ def buscar_solucion_bfs(estado_inicial, cantidad_piezas):
             columna = nodo.get_datos().index(fila)
             if fila - columna in lista_descendentes:
                 bandera_diagonales = False
+                break
             else:
                 lista_descendentes.append(fila - columna)
             if fila + columna in lista_ascendentes:
                 bandera_diagonales = False
+                break
             else:
                 lista_ascendentes.append(fila + columna)
 
